@@ -95,7 +95,7 @@ export default {
 
     .container {
         @include dflex;
-        height: 50vh;
+        height: 370px;
 
         .listone {
             display: flex;
@@ -123,6 +123,10 @@ export default {
                 a {
                     color: $textgray;
                     text-decoration: none;
+
+                    &:hover {
+                        color: white;
+                    }
 
 
                 }
@@ -170,6 +174,10 @@ export default {
 
         img {
             margin: 0 10px;
+
+            &:hover {
+                filter: brightness(0) invert(1)
+            }
 
         }
     }

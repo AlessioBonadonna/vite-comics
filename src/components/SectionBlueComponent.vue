@@ -31,22 +31,23 @@ export default {
                 {
                     url: "#nogo",
                     img: "/public/img/buy-comics-merchandise.png",
-                    text: "Digital Comics"
-                },
-                {
-                    url: "#nogo",
-                    img: "/public/img/buy-comics-shop-locator.png",
-                    text: "Digital Comics"
+                    text: "Dc Merchandise"
                 },
                 {
                     url: "#nogo",
                     img: "/public/img/buy-comics-subscriptions.png",
-                    text: "Digital Comics"
+                    text: "Subscriptions"
                 },
                 {
                     url: "#nogo",
+                    img: "/public/img/buy-comics-shop-locator.png",
+                    text: "Comics Shop locator"
+                },
+
+                {
+                    url: "#nogo",
                     img: "/public/img/buy-dc-power-visa.svg",
-                    text: "Digital Comics"
+                    text: "Dc power Visa"
                 }
             ]
 
@@ -80,10 +81,13 @@ export default {
 
                     img {
                         width: 50px;
+
+
                     }
 
                     span {
                         margin-left: 8px;
+                        text-transform: uppercase;
                     }
                 }
             }
