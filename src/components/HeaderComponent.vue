@@ -100,15 +100,15 @@ ul {
 
         a {
             text-decoration: none;
-            color: black;
+            color: $blacktext;
             height: 50px;
             padding-bottom: 50px;
 
             &.active,
             &:hover,
             &:active {
-                color: blue;
-                border-bottom: 5px solid blue;
+                color: $bluelink;
+                border-bottom: 5px solid $bluelink;
             }
 
 

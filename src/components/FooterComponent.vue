@@ -62,10 +62,13 @@
             <div class="social">
                 <span>Follow us</span>
                 <img src="../../public/img/footer-facebook.png" alt="fb">
-                <img src="../../public/img/footer-periscope.png" alt="periscope">
-                <img src="../../public/img/footer-pinterest.png" alt="pinterst">
                 <img src="../../public/img/footer-twitter.png" alt="twitter">
                 <img src="../../public/img/footer-youtube.png" alt="yt">
+                <img src="../../public/img/footer-pinterest.png" alt="pinterst">
+                <img src="../../public/img/footer-periscope.png" alt="periscope">
+
+
+
             </div>
         </div>
 
@@ -99,7 +102,7 @@ export default {
         }
 
         h4 {
-            color: white;
+            color: $whitetext;
             text-transform: uppercase;
             font-size: 1.5em;
             margin-bottom: 10px;
@@ -111,15 +114,17 @@ export default {
         }
 
         ul {
-            color: white;
+            color: $whitetext;
             margin-right: 30px;
 
             li {
                 list-style: none;
 
                 a {
-                    color: gray;
+                    color: $textgray;
                     text-decoration: none;
+
+
                 }
             }
         }
@@ -137,15 +142,20 @@ export default {
 }
 
 .socials {
-    background-color: gray;
+    background-color: $bgfooter;
     padding: 25px;
 
     a {
-        border: 3px solid blue;
+
+        border: 3px solid $bluetext;
         padding: 8px;
         color: white;
         text-decoration: none;
         text-transform: uppercase;
+
+        &:hover {
+            background-color: $bluetext;
+        }
     }
 
     .social {
@@ -153,11 +163,14 @@ export default {
 
 
         span {
-            margin-right: 10px
+            margin-right: 10px;
+            color: $bluetext ;
+            font-size: 2em;
         }
 
         img {
-            margin-left: 5px;
+            margin: 0 10px;
+
         }
     }
 }

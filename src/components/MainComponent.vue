@@ -20,16 +20,17 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/style/partials/mixins' as *;
+@use '../assets/style/partials/variabels' as *;
 
 main {
-    color: white;
-    background-color: black;
+    color: $whitetext;
+    background-color: $blacktext;
 }
 
 section {
     @include dflex;
     @include container;
-    background-color: black;
+    background-color: $blacktext;
     height: 15vh;
 
 
@@ -41,7 +42,7 @@ section {
         justify-content: flex-start;
 
         h2 {
-            color: white;
+            color: $whitetext;
         }
     }
 }

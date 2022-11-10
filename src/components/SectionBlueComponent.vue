@@ -61,7 +61,7 @@ export default {
 @use '../assets/style/partials/variabels' as *;
 
 .blue {
-    background-color: blue;
+    background-color: $bluelink;
 
     .container {
         padding-top: 40px;
@@ -75,7 +75,7 @@ export default {
 
                 a {
                     @include dflex;
-                    color: white;
+                    color: $whitetext;
                     text-decoration: none;
 
                     img {
