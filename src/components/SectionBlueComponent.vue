@@ -1,13 +1,13 @@
 <template>
-    <section>
+    <section class="blue">
         <div class="container">
             <ul>
                 <li v-for="(img, index) in blueimg" :key="index">
                     <a :href="img.url">
                         <img :src="img.img" alt="img.text">
-                        <div>
-                            <p>{{ img.text }}</p>
-                        </div>
+                        <span>
+                            {{ img.text }}
+                        </span>
 
                     </a>
                 </li>
@@ -25,27 +25,27 @@ export default {
             blueimg: [
                 {
                     url: "#nogo",
-                    img: "../assets/img/buy-comics-digital-comics.png",
+                    img: "/public/img/buy-comics-digital-comics.png",
                     text: "Digital Comics"
                 },
                 {
                     url: "#nogo",
-                    img: "../assets/img/buy-comics-merchandise.png",
+                    img: "/public/img/buy-comics-merchandise.png",
                     text: "Digital Comics"
                 },
                 {
                     url: "#nogo",
-                    img: "../assets/img/buy-comics-shop-locator.png",
+                    img: "/public/img/buy-comics-shop-locator.png",
                     text: "Digital Comics"
                 },
                 {
                     url: "#nogo",
-                    img: "../assets/img/buy-comics-subscriptions.png",
+                    img: "/public/img/buy-comics-subscriptions.png",
                     text: "Digital Comics"
                 },
                 {
                     url: "#nogo",
-                    img: "../assets/img/buy-comics-dc-power-visa.png",
+                    img: "/public/img/buy-dc-power-visa.svg",
                     text: "Digital Comics"
                 }
             ]
@@ -57,5 +57,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/style/partials/mixins' as *;
+@use '../assets/style/partials/variabels' as *;
 
+.blue {
+    background-color: blue;
+
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        ul {
+            @include dflex;
+
+            li {
+                list-style: none;
+
+                a {
+                    @include dflex;
+                    color: white;
+                    text-decoration: none;
+
+                    img {
+                        width: 50px;
+                    }
+
+                    span {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
 </style>

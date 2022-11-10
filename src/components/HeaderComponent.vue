@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="Logo DC">
+            <img src="/public/img/dc-logo.png" alt="Logo DC">
         </div>
         <nav>
             <ul>
