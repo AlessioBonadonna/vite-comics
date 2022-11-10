@@ -105,7 +105,8 @@ ul {
             padding-bottom: 50px;
 
             &.active,
-            &:hover {
+            &:hover,
+            &:active {
                 color: blue;
                 border-bottom: 5px solid blue;
             }
