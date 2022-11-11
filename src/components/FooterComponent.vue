@@ -1,58 +1,11 @@
 <template>
     <div class="sfondo">
         <div class="container">
-
             <div class="listone">
-                <div>
-                    <div class="primalista">
-                        <h4>dc comics</h4>
-                        <ul>
+                <ListFooter v-for="(item, index) in menuFooter" :key="index" :obj="item" />
 
-                            <li><a href="#nogo">Characters</a></li>
-                            <li><a href="#nogo">Comics</a></li>
-                            <li><a href="#nogo">Movies</a></li>
-                            <li><a href="#nogo">TV</a></li>
-                            <li><a href="#nogo">Games</a></li>
-                            <li><a href="#nogo">Videos</a></li>
-                            <li><a href="#nogo">News</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="secondalista">
-                        <h4>shop</h4>
-                        <ul>
-                            <li><a href="#nogo">Shop DC</a></li>
-                            <li><a href="#nogo">Shop DC Collectibles</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="terzalista">
-                    <h4>DC</h4>
-                    <ul>
-                        <li><a href="#nogo">Term Of Use</a></li>
-                        <li><a href="#nogo">Privacy policy (New)</a></li>
-                        <li><a href="#nogo">Ad Choices</a></li>
-                        <li><a href="#nogo">Advertising</a></li>
-                        <li><a href="#nogo">Jobs</a></li>
-                        <li><a href="#nogo">Subscription</a></li>
-                        <li><a href="#nogo">Talent Workshops</a></li>
-                        <li><a href="#nogo">CPSC Certificates</a></li>
-                        <li><a href="#nogo">Ratings</a></li>
-                        <li><a href="#nogo">Shop Help</a></li>
-                        <li><a href="#nogo">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="quartalista">
-                    <h4>Site</h4>
-                    <ul>
-                        <li><a href="#nogo">DC</a></li>
-                        <li><a href="#nogo">AD Magazine</a></li>
-                        <li><a href="#nogo">DC Kids</a></li>
-                        <li><a href="#nogo">DC Universe</a></li>
-                        <li><a href="#">DC Power Visa</a></li>
-                    </ul>
-                </div>
             </div>
+
             <img src="../../public/img/dc-logo-bg.png" alt="">
         </div>
     </div>
@@ -77,12 +30,20 @@
 </template>
 
 <script>
+import { menuFooter } from '../data/data'
+import ListFooter from './ListFooter.vue';
 export default {
-
+    name: "FooterComponent",
+    data() {
+        return {
+            menuFooter: menuFooter
+        };
+    },
+    components: { ListFooter }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @use '../assets/style/partials/mixins' as *;
 @use '../assets/style/partials/variabels' as *;
 
@@ -99,6 +60,19 @@ export default {
 
         .listone {
             display: flex;
+            flex-wrap: wrap;
+
+
+
+            .list {
+                width: calc(100% / 3);
+
+
+            }
+
+            .list:last-child {
+                margin-top: -50px;
+            }
         }
 
         h4 {
@@ -108,10 +82,7 @@ export default {
             margin-bottom: 10px;
         }
 
-        .primalista {
-            margin-bottom: 18px;
 
-        }
 
         ul {
             color: $whitetext;
