@@ -206,5 +206,60 @@ const menuFooter = [
 ];
 
 
+const links = [
+  {
+    text: "charates",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "comics",
+    url: "#nogo",
+    current: true,
+  },
+  {
+    text: "movies",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "tv",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "games",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "collectibes",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "videos",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "fans",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "news",
+    url: "#nogo",
+    current: false,
+  },
+  {
+    text: "shop",
+    url: "#nogo",
+    current: false,
+  },
 
-export { comics, menuFooter }
+]
+
+
+
+export { comics, menuFooter, links }

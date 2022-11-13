@@ -128,17 +128,18 @@ main {
             height: 40px;
             width: 150px;
             padding: 10px;
-            border: none;
+            border: 3px solid $bluelink;
             margin-bottom: 10px;
             text-transform: uppercase;
             font-weight: bold;
             color: $whitetext;
             font-size: 1.2em;
+            cursor: pointer;
 
             &:hover {
+                border-radius: 16px;
                 background-color: black;
-                border: 3px solid $bluelink;
-                padding: 10px;
+
             }
         }
     }

@@ -122,9 +122,9 @@ export default {
 
     a {
 
-        border: 3px solid $bluetext;
+        border: 3px solid $bluelink;
         padding: 8px;
-        color: white;
+        color: $whitetext;
         text-decoration: none;
         text-transform: uppercase;
 
@@ -139,7 +139,7 @@ export default {
 
         span {
             margin-right: 10px;
-            color: $bluetext ;
+            color: $bluelink ;
             font-size: 2em;
         }
 

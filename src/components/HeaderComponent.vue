@@ -15,66 +15,15 @@
 </template>
 
 <script>
-
+import { links } from '../data/data';
 export default {
     name: 'HeaderComponent',
     data() {
         return {
-            links: [
-                {
-                    text: "charates",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "comics",
-                    url: "#nogo",
-                    current: true,
-                },
-                {
-                    text: "movies",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "tv",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "games",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "collectibes",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "videos",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "fans",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "news",
-                    url: "#nogo",
-                    current: false,
-                },
-                {
-                    text: "shop",
-                    url: "#nogo",
-                    current: false,
-                },
-
-            ]
+            links: links
         }
     }
+
 }
 </script>
 
